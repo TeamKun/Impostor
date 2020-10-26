@@ -46,6 +46,7 @@ namespace Impostor.Server.Net
 
                 e.HandshakeData.Recycle();
                 
+                /*
                 if (clientVersion != 50516550)
                 {
                     using (var packet = MessageWriter.Get(SendOption.Reliable))
@@ -55,6 +56,7 @@ namespace Impostor.Server.Net
                     }
                     return;
                 }
+                */
             
                 // Create client.
                 _clientManager.Create(clientName, e.Connection);
